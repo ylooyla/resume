@@ -26,12 +26,12 @@ a {
     margin-right: 20px;
 }
 
-.skill-tag {
-	color: #f40;
+.skill-tag, a {
+	color: #FF8C00;
 	cursor: pointer;
 
 	&:hover {
-		color: blue;
+		color: #409EFF;
 	}
 }
 

@@ -2,30 +2,85 @@
 	<card title="项目经历" class="project">
 		<div class="project-item">
 			<div class="project-title">
-				<p>2020.08 - 2020.09</p>
-				<p>Vue2的UI组件库</p>
+				<p>2021.02 - 2021.03</p>
+				<p>Vue3、TS 开发的UI组件库 + 自制官网</p>
 				<p>个人开源项目</p>
 			</div>
-			<img src="http://pand.club/upload/BookerUI-Home.png" alt class="project-img" />
+			<img
+				src="http://pand.club/upload/BookerUI-Next-Home.png"
+				alt
+				class="project-img"
+			/>
 			<ul class="project-desc">
-				<li>
-					<h4>项目介绍</h4>
+				<li
+					v-for="(projects, index) in projectList2"
+					:key="'projects' + index"
+				>
+					<h4>{{ projects.title }}</h4>
 					<div>
-						该项目是参照 Framework7、Ant Design、Element UI、iView 等 UI 库思路，做的一套基于 Vue 的简易 UI 组件库，目前已支持按钮、输入框、网格、布局等UI组件。Toast、Tabs、Popover、手风琴等目前正在开发中。
-						每个组件均经历从需求分析到 Mocha 单元测试，并用 TravisCI 实现持续集成，最终以 VuePress 为基础制作官方文档，发布于 npmjs.org。
-						完成该项目使我对 Vue 的常用特征更加熟悉，同时提升了自己对前端工程化流程以及单元测试重要性的深刻理解， 近一步了解开源文化。
+						<p
+							v-for="(project, index) in projects.children"
+							:key="'project' + index"
+							v-html="project"
+						></p>
 					</div>
 				</li>
-				<li>
-					<h4>技术栈：</h4>
-					<div>Vue.js/ VuePress/ ES6/ Parcel/ Npm Scripts/ Mocha/ SCSS/ TravisCI</div>
+			</ul>
+		</div>
+
+
+		<div class="project-item">
+			<div class="project-title">
+				<p>2021.01 - 2021.02</p>
+				<p>Vue3 + TS 开发的在线文档专栏</p>
+				<p>个人开源项目</p>
+			</div>
+			<img
+				src="http://pand.club/upload/EasyBooker-Home.png"
+				alt
+				class="project-img"
+			/>
+			<ul class="project-desc">
+				<li
+					v-for="(projects, index) in projectList1"
+					:key="'projects' + index"
+				>
+					<h4>{{ projects.title }}</h4>
+					<div>
+						<p
+							v-for="(project, index) in projects.children"
+							:key="'project' + index"
+							v-html="project"
+						></p>
+					</div>
 				</li>
-				<li>
-					<h4>
-						项目地址：
-						<a href="https://bookerdrew.github.io/Booker-UI/">在线预览</a>
-						<a href="https://github.com/BookerDrew/Booker-UI">项目源码</a>
-					</h4>
+			</ul>
+		</div>
+
+		<div class="project-item">
+			<div class="project-title">
+				<p>2020.08 - 2020.09</p>
+				<p>Vue2 开发的UI组件库</p>
+				<p>个人开源项目</p>
+			</div>
+			<img
+				src="http://pand.club/upload/BookerUI-Home.png"
+				alt
+				class="project-img"
+			/>
+			<ul class="project-desc">
+				<li
+					v-for="(projects, index) in projectList"
+					:key="'projects' + index"
+				>
+					<h4>{{ projects.title }}</h4>
+					<div>
+						<p
+							v-for="(project, index) in projects.children"
+							:key="'project' + index"
+							v-html="project"
+						></p>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -35,13 +90,143 @@
 import { defineComponent, computed } from 'vue'
 import Card from './Card.vue'
 
+interface ProjectProp {
+	title: string
+	children: string[]
+}
+
+const Projects = [
+	{
+		title: '项目介绍',
+		children: [
+			'Booker-UI 是一个基于 Vue2 的高质量UI组件库，该项目参照了AntDesign、ElementUI、iView等UI库思路。',
+			'目前已开发完成 Icon 、 Button 、 ButtonGrop 、 Tabs 、 Input 、 Grid 、 Container 、 Toast 、 Popover 、 Collapse 等组件。',
+			'每个组件均经历从需求分析到 Mocha 单元测试，并用 TravisCI 实现持续集成，最终以 VuePress 为基础制作官方文档，发布于 npmjs.org。',
+			'该项目使我对 Vue 开发更加熟悉，提升了自己对前端工程化流程以及单元测试重要性的深刻理解， 近一步了解开源文化。',
+		],
+	},
+	{
+		title: '技术栈',
+		children: ['Vue2 / VuePress / ES6 / Parcel / Mocha / SCSS / TravisCI'],
+	},
+	{
+		title: '项目地址',
+		children: [
+			'<a href="https://bookerdrew.github.io/Booker-UI/">在线预览</a>',
+			'<a href="https://github.com/BookerDrew/Booker-UI">项目源码</a>',
+		],
+	},
+]
+
+const Projects1 = [
+	{
+		title: '项目介绍',
+		children: [
+			'EasyBooker 是基于 Vue3 + TypeScript + Vuex + Vue-Router 全家桶开发的前后端分离的多人文档专栏平台。',
+			'项目全部采用新版 CompositionAPI 编写，使用Vue3热门的技术栈 Ref 和 Reactive 、 watch 和 computed 、 自定义函数Hooks 、 Teleport 和 Suspense 等等。',
+			'TypeScript 做类型约束，以组件开发为脉络，实现一系列由易到难的通用组件开发，复杂组件设计和实现。',
+			'Vuex 整体状态数据结构的设计和实现，获取，结构，缓存等设计，user、columns、posts 多个页面数据共享。',
+			'JWT 实现权限验证， Router + 路由守卫 + meta 页面权限管理和路由拦截。'
+		],
+	},
+	{
+		title: '技术栈',
+		children: ['Vue3 / Vuex/ Vue-Router / TypeScript / ES6 / JWT / Node / Scss / Axios'],
+	},
+	{
+		title: '项目地址',
+		children: [
+			'<a href="http://pand.club/easybooker/">在线预览</a>',
+			'<a href="https://github.com/BookerDrew/EasyBooker">项目源码</a>',
+		],
+	},
+]
+
+const Projects2 = [
+	{
+		title: '项目介绍',
+		children: [
+			'BookerUI-Next 是一个基于 Vue3 + TypeScript 的UI组件库，这是我在Vue3和TypeScript的项目过程中，抽象的一个UI组件库。',
+			'使用 Vue3 + Vue-Router4 制作了官网，参考 ElementUI-Plus 风格进行 Page设计 、和 Router设计 。',
+			'使用 TypeScript 做类型约束，实现一系列由易到难的通用组件开发，目前已开发完成 DropDown下拉框 、 Table表格 、 Loading加载中 、 Message消息提示 、 Modal对话框、 Input输入框 、 Form表单 、 Uploading上传 等组件。',
+		],
+	},
+	{
+		title: '技术栈',
+		children: ['Vue3 / Vue-Router / TypeScript / ES6 / Scss / Axios'],
+	},
+	{
+		title: '项目地址',
+		children: [
+			'<a href="http://pand.club/bookerui-next">在线预览</a>',
+			'<a href="https://github.com/BookerDrew/BookerUI-Next">项目源码</a>',
+		],
+	},
+]
+
+
 export default defineComponent({
 	components: {
-		Card
+		Card,
 	},
 	setup() {
-		return {}
-	}
+		const projectList = computed(() => {
+			const tmp = []
+			for (let prject of Projects) {
+				tmp.push(addTag(prject))
+			}
+			return tmp
+		})
+
+		const projectList1 = computed(() => {
+			const tmp = []
+			for (let prject of Projects1) {
+				tmp.push(addTag(prject))
+			}
+			return tmp
+		})
+
+		const projectList2 = computed(() => {
+			const tmp = []
+			for (let prject of Projects2) {
+				tmp.push(addTag(prject))
+			}
+			return tmp
+		})
+		function addTag(skill: ProjectProp) {
+			let result: ProjectProp = {
+				title: skill.title,
+				children: [],
+			}
+			const childrens = skill.children
+			for (let i = 0; i < childrens.length; i++) {
+				const strArr = childrens[i].split(' ')
+				let line = ''
+				strArr.forEach((ele) => {
+					const strUpper = ele.toUpperCase()
+
+					if (strUpper.startsWith('HREF')) {
+						line += ele + ' '
+					} else if (
+						strUpper[0].charCodeAt(0) >= 65 &&
+						strUpper[0].charCodeAt(0) <= 90 
+					) {
+						line += '<span class="skill-tag"> ' + ele + ' </span>'
+					} else {
+						line += ele + ' '
+					}
+				})
+				result.children.push(line)
+			}
+
+			return result
+		}
+		return {
+			projectList,
+			projectList1,
+			projectList2
+		}
+	},
 })
 </script>
 <style lang="scss" scoped>

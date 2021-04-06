@@ -3,7 +3,7 @@
 		<div class="experience-item">
 			<div class="experience-title">
 				<p>2017.08 - 2021.04</p>
-				<p>卓望数码有限公司</p>
+				<p>卓望数码技术有限公司</p>
 				<p>运维开发工程师</p>
 			</div>
 		</div>

@@ -2,7 +2,9 @@
 	<card title="专业技能" class="skills">
 		<div v-for="(skills, index) in skillList" :key="'skills' + index" class="skill">
 			<h2>{{ skills.title }}</h2>
-			<p v-for="(skill, index) in skills.children" :key="'skill' + index" v-html="skill"></p>
+			<div>
+				<p v-for="(skill, index) in skills.children" :key="'skill' + index" v-html="skill"></p>
+			</div>
 		</div>
 	</card>
 </template>
@@ -48,7 +50,7 @@ const Skills = [
 		children: [
 			'熟悉 jQuery / Lodash 等工具库的使用，能够运用其封装的API简化项目中的业务逻辑',
 			'熟悉 Less / Sass / Stylus / PostCSS 等CSS预处理、后处理工具',
-			'熟悉 styled-components 库的使用，在项目中实践过CSS IN JS的开发模式和思想'
+			'熟悉 styled-components 库的使用，在项目中实践过 CSS-IN-JS的开发模式和思想'
 		]
 	},
 	{
@@ -107,9 +109,9 @@ export default defineComponent({
 						strUpper[0].charCodeAt(0) >= 65 &&
 						strUpper[0].charCodeAt(0) <= 90
 					) {
-						line += '<span class="skill-tag">' + ele + '</span>'
+						line += '<span class="skill-tag"> ' + ele + ' </span>'
 					} else {
-						line += ele
+						line += ele + ' '
 					}
 				})
 				result.children.push(line)

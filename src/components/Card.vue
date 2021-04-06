@@ -22,7 +22,7 @@ export default defineComponent({
 .card {
 	position: relative;
 	padding: 30px 0;
-	border-top: 1px solid #0ff;
+	border-top: 1px solid #409EFF;
 
 	.title {
 		font-weight: 800;
@@ -35,7 +35,7 @@ export default defineComponent({
 		box-sizing: border-box;
 		height: 40px;
 		line-height: 40px;
-		background-color: #0ff;
+		background-color: #409EFF;
 
 		&::after {
 			position: absolute;
