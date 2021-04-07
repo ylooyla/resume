@@ -1,18 +1,19 @@
 <template>
-<div class="container">
+<div class="container" :class="{ imgShow: imgShow}">
+	<button class="click-button" @click="imgShow = !imgShow">{{ imgShow ? '显示头图': '隐藏头图' }}</button>
 	<div class="wrap">
 		<headers />
-		<experience />
-		<project />
 		<skills />
+		<project />
+		<experience />
 		<education />
-		<introduce />
+		<introduce :style="{display: 'none'}"/>
 	</div>
 </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import Skills from './components/Skills.vue'
 import Education from './components/Education.vue'
 import Experience from './components/Experience.vue'
@@ -29,6 +30,13 @@ export default defineComponent({
 		Project,
 		Introduce,
 		Headers
+	},
+	setup() {
+		const imgShow = ref(false)
+
+		return {
+			imgShow
+		}
 	}
 })
 </script>
@@ -43,5 +51,31 @@ export default defineComponent({
 	margin: 0 auto;
 	background-color: #fff;
 	box-shadow: 0 0 1px 0 #666;
+}
+
+.imgShow {
+	img {
+		display: none;
+	}
+}
+
+
+.click-button {
+	position: fixed;
+	top: 70px;
+	right: 70px;
+	width: 100px;
+	height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+	outline: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+    color: #1989fa;
+    &:hover {
+		background-color: #1989fa;
+		color: #fff;
+    }
 }
 </style>

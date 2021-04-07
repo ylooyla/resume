@@ -125,13 +125,13 @@ const Projects1 = [
 			'EasyBooker 是基于 Vue3 + TypeScript + Vuex + Vue-Router 全家桶开发的前后端分离的多人文档专栏平台。',
 			'项目全部采用新版 CompositionAPI 编写，使用Vue3热门的技术栈 Ref 和 Reactive 、 watch 和 computed 、 自定义函数Hooks 、 Teleport 和 Suspense 等等。',
 			'TypeScript 做类型约束，以组件开发为脉络，实现一系列由易到难的通用组件开发，复杂组件设计和实现。',
-			'Vuex 整体状态数据结构的设计和实现，获取，结构，缓存等设计，user、columns、posts 多个页面数据共享。',
-			'JWT 实现权限验证， Router + 路由守卫 + meta 页面权限管理和路由拦截。'
+			'Vuex 整体状态数据结构的设计和实现，获取，结构，缓存等设计，user、columns、posts、编辑 等多个页面数据共享。',
+			'JWT 实现权限验证， Router守卫 + meta 实现页面权限管理和路由拦截。'
 		],
 	},
 	{
 		title: '技术栈',
-		children: ['Vue3 / Vuex/ Vue-Router / TypeScript / ES6 / JWT / Node / Scss / Axios'],
+		children: ['Vue3 / Vuex / Vue-Router4 / TypeScript / ES6 / JWT / Node / Scss / Axios'],
 	},
 	{
 		title: '项目地址',
@@ -153,7 +153,7 @@ const Projects2 = [
 	},
 	{
 		title: '技术栈',
-		children: ['Vue3 / Vue-Router / TypeScript / ES6 / Scss / Axios'],
+		children: ['Vue3 / Vue-Router4 / TypeScript / ES6 / Scss / Axios'],
 	},
 	{
 		title: '项目地址',
