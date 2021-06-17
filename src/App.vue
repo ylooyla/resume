@@ -5,8 +5,8 @@
 		<headers />
 		<skills />
 		<project />
-		<experience />
 		<education />
+		<experience />
 		<introduce :style="{display: 'none'}"/>
 	</div>
 </div>
@@ -50,7 +50,7 @@ export default defineComponent({
 	padding: 40px 0 0 40px;
 	margin: 0 auto;
 	background-color: #fff;
-	box-shadow: 0 0 1px 0 #666;
+	box-shadow: 0 0 2px 0 #666;
 }
 
 .imgShow {
@@ -62,6 +62,7 @@ export default defineComponent({
 
 .click-button {
 	position: fixed;
+	opacity: 0;
 	top: 70px;
 	right: 70px;
 	width: 100px;
@@ -74,6 +75,7 @@ export default defineComponent({
 	cursor: pointer;
     color: #1989fa;
     &:hover {
+		opacity: 1;
 		background-color: #1989fa;
 		color: #fff;
     }

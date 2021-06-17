@@ -8,8 +8,8 @@
 		</div>
 		<div class="header-item">
 			<i class="iconfont icon-job"><span>初级/中级前端开发</span></i>
-			<i class="iconfont icon-phone"><span>15775691933</span></i>
-			<i class="iconfont icon-mail"><span>2088867510@qq.com</span></i>
+			<i class="iconfont icon-phone"><span>157 7569 1933</span></i>
+			<i class="iconfont icon-mail"><span>BookeDrew@gmail.com</span></i>
 		</div>
 	</div>
 </template>

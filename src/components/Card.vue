@@ -40,7 +40,7 @@ export default defineComponent({
 		&::after {
 			position: absolute;
 			top: 0;
-			right: 0px;
+			right: -1px;
 			content: ' ';
 			width: 0;
 			height: 0;
