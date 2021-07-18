@@ -117,8 +117,8 @@ const Projects = [
 	{
 		title: '项目地址',
 		children: [
-			'<a href="https://bookerdrew.github.io/Booker-UI/">在线预览</a>',
-			'<a href="https://github.com/BookerDrew/Booker-UI">项目源码</a>',
+			'<a href="https://bookerdrew.github.io/Booker-UI/">在线预览：https://bookerdrew.github.io/Booker-UI</a>',
+			'<a href="https://github.com/BookerDrew/Booker-UI">项目源码：https://github.com/BookerDrew/Booker-UI</a>',
 		],
 	},
 ]
@@ -146,8 +146,8 @@ const Projects1 = [
 	{
 		title: '项目地址',
 		children: [
-			'<a href="http://pand.club/easybooker/">在线预览</a>',
-			'<a href="https://github.com/BookerDrew/EasyBooker">项目源码</a>',
+			'<a href="http://pand.club/easybooker/">在线预览：http://pand.club/easybooker</a>',
+			'<a href="https://github.com/BookerDrew/EasyBooker">项目源码：https://github.com/BookerDrew/EasyBooker</a>',
 		],
 	},
 ]
@@ -173,8 +173,8 @@ const Projects2 = [
 	{
 		title: '项目地址',
 		children: [
-			'<a href="http://pand.club/bookerui-next">在线预览</a>',
-			'<a href="https://github.com/BookerDrew/BookerUI-Next">项目源码</a>',
+			'<a href="http://pand.club/bookerui-next">在线预览：http://pand.club/bookerui-next</a>',
+			'<a href="https://github.com/BookerDrew/BookerUI-Next">项目源码：https://github.com/BookerDrew/BookerUI-Next</a>',
 		],
 	},
 ]

@@ -54,8 +54,23 @@ export default defineComponent({
 }
 
 .imgShow {
+	
 	img {
 		display: none;
+	}
+
+	.wrap {
+		box-shadow: none;	
+	}
+
+	.skill-tag {
+		color: #333;
+		font-weight: 800;
+	}
+
+
+	.project-item a  {
+		color: #333;
 	}
 }
 
