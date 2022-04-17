@@ -2,34 +2,40 @@
 <div class="container" :class="{ imgShow: imgShow}">
 	<button class="click-button" @click="imgShow = !imgShow">{{ imgShow ? '显示头图': '隐藏头图' }}</button>
 	<div class="wrap">
+		<!-- 个人信息 -->
 		<headers />
-		<skills />
-		<project />
-		<education />
+		<!-- 优势总结 -->
+		<sums-up />
+		<!-- 工作经历 -->
 		<experience />
-		<introduce :style="{display: 'none'}"/>
+		<!-- 项目经历 -->
+		<project />
+		<!-- 专业技能 -->
+		<skills />
+		<!-- 教育经历 -->
+		<education />
 	</div>
 </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import Skills from './components/Skills.vue'
-import Education from './components/Education.vue'
-import Experience from './components/Experience.vue'
-import Project from './components/Project.vue'
-import Introduce from './components/Introduce.vue'
 import Headers from './components/Headers.vue'
+import SumsUp from './components/SumsUp/index.vue'
+import Experience from './components/Experience/index.vue'
+import Project from './components/Project/index.vue'
+import Skills from './components/Skills/index.vue'
+import Education from './components/Education.vue'
 
 export default defineComponent({
 	name: 'App',
 	components: {
-		Skills,
-		Education,
+		Headers,
+		SumsUp,
 		Experience,
 		Project,
-		Introduce,
-		Headers
+		Skills,
+		Education
 	},
 	setup() {
 		const imgShow = ref(false)

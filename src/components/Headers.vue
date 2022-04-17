@@ -7,7 +7,7 @@
 			<i class="iconfont icon-education"><span>本科</span></i>
 		</div>
 		<div class="header-item">
-			<i class="iconfont icon-job"><span>初级/中级前端开发</span></i>
+			<i class="iconfont icon-job"><span>前端开发</span></i>
 			<i class="iconfont icon-phone"><span>157 7569 1933</span></i>
 			<i class="iconfont icon-mail"><span>BookeDrew@gmail.com</span></i>
 		</div>
