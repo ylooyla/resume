@@ -1,5 +1,5 @@
 export const list = [
-  '熟悉 Javascript 、 Vue 、 React ，了解 Nodejs 技术栈，比如：Nodejs 开发错误检测脚本，推动前端日志监控；',
-  '熟悉前端工程化建设，推动团队基础工程建设，比如：推动 CI / CD 的建设，优化了构建流程；',
-  '熟悉Linux服务器、 Shell 、 MySQL 、 Nginx 等常用中间件，比如：优化 Nginx 配置；'
+    '熟练 Javascript 、 Vue 、 React ，了解 Nodejs 。比如：Nodejs 开发日志监控上报工具，推动团队生产环境错误监控；',
+    '熟练 Linux 服务器、 Shell 、Docker ， 熟练 MySQL 、 Nginx 、 ES 等常用中间件。比如：优化 Nginx 配置；',
+    '熟练 GitLab 、 Webpack 配置，推动团队工程化建设。比如：推动 CI / CD 的建设，优化了构建流程。'
 ]
