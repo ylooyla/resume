@@ -4,7 +4,6 @@
         <div class="header-item">
             <i class="iconfont icon-avatar"><span>姓名：杜攀</span></i>
             <i class="iconfont icon-sex"><span>性别：男</span></i>
-            <i class="iconfont icon-education"><span>学历：本科</span></i>
         </div>
         <div class="header-item">
             <i class="iconfont icon-phone"><span>电话：157 7569 1933</span></i>

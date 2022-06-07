@@ -5,14 +5,21 @@ body {
     background-color: #fff;
 }
 
-ul, li, h1, h2, h3, h4, h5, p {
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     padding: 0;
     margin: 10px 0;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 1000;
+    font-size: 32px;
+    font-weight: 2000;
 }
 
 h2 {
@@ -25,12 +32,12 @@ a {
     margin-right: 20px;
 }
 
-.skill-tag, a {
-	color: #FF9933;
-	cursor: pointer;
+.skill-tag,
+a {
+    font-weight: 800;
+    cursor: pointer;
 
-	&:hover {
-		color: #409EFF;
-	}
+    &:hover {
+        color: #409eff;
+    }
 }
-
