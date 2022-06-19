@@ -12,6 +12,8 @@
             <skills />
             <!-- 项目经历 -->
             <project />
+            <!-- 个人作品 -->
+            <personal />
             <!-- 工作经历 -->
             <experience />
         </div>
@@ -21,9 +23,9 @@
 <script lang="ts">
 import {defineComponent, ref} from 'vue'
 import Headers from './components/Headers.vue'
-// import SumsUp from './components/SumsUp/index.vue'
 import Experience from './components/Experience/index.vue'
 import Project from './components/Project/index.vue'
+import Personal from './components/Personal/index.vue'
 import Skills from './components/Skills/index.vue'
 import Education from './components/Education.vue'
 
@@ -33,6 +35,7 @@ export default defineComponent({
         Headers,
         Experience,
         Project,
+        Personal,
         Skills,
         Education
     },
