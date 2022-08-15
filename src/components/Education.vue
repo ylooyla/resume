@@ -2,8 +2,8 @@
     <card title="教育经历" class="education">
         <div class="education-item">
             <div class="education-title">
-                <p>2013.09 - 2017.07</p>
-                <p>四川文理学院</p>
+                <p>2016.09 - 2020.07</p>
+                <p>黄淮学院</p>
                 <p>本科</p>
             </div>
         </div>

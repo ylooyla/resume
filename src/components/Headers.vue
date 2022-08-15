@@ -2,13 +2,13 @@
     <div class="header">
         <h1>个人信息</h1>
         <div class="header-item">
-            <i class="iconfont icon-avatar"><span>姓名：杜攀</span></i>
+            <i class="iconfont icon-avatar"><span>姓名：吴创胜</span></i>
             <i class="iconfont icon-sex"><span>性别：男</span></i>
         </div>
         <div class="header-item">
-            <i class="iconfont icon-phone"><span>电话：157 7569 1933</span></i>
+            <i class="iconfont icon-phone"><span>电话：137 8394 8534</span></i>
             <i class="iconfont icon-mail"
-                ><span>邮箱：Panther.D@hotmail.com</span></i
+                ><span>邮箱：1062608214@qq.com</span></i
             >
         </div>
     </div>
