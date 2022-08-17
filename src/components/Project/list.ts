@@ -33,7 +33,7 @@ export const list = [
     {
         title: {
             name: '盈立智投APP-H5',
-            date: '2021.09 - 2022.01'
+            date: '2019.09 - 至今'
         },
         content: [
             {
@@ -61,51 +61,51 @@ export const list = [
             }
         ]
     },
-    // {
-    //     title: {
-    //         name: '我抢特斯拉活动H5',
-    //         date: '2021.08 - 2021.09'
-    //     },
-    //     content: [
-    //         {
-    //             title: '项目介绍',
-    //             children: [
-    //                 '我抢特斯拉活动，领取盈立豆并猜涨跌，进行模拟下注、平仓操作。提供登录注册、线上开户、兑换、股票池、猜涨跌、好友邀请等功能。'
-    //             ]
-    //         },
-    //         {
-    //             title: '技术栈',
-    //             children: [
-    //                 '框架： React + React-router + redux ；',
-    //                 '构建、CI/CD ：webpack + babel + gitlab CI + SVN + jenkins + 腾讯云；',
-    //                 '统计和监控：GA 、 神策；'
-    //             ]
-    //         },
-    //         {
-    //             title: '工作和成就',
-    //             children: [
-    //                 '参与 react项目 的搭建，参与 redux 数据结构、项目结构、代码规范 等的设计；',
-    //                 '负责 我抢特斯拉活动页面的开发，一期、二期活动投放期间，吸引2000新用户注册，300人入金（金额>1亿港币）。'
-    //             ]
-    //         }
-    //     ]
-    // },
     {
         title: {
-            name: 'UMS IT云运维管理平台（中国移动）',
-            date: '2020.07 - 2021.06'
+            name: '我抢特斯拉活动H5',
+            date: '2021.06 - 2021.09'
         },
         content: [
             {
                 title: '项目介绍',
                 children: [
-                    '中国移动Ums运维管理平台，集监控、告警、CMDB、流程、自动化、运营等6大模块，满足 一线、二线运维、产品、现场团队的运维和运营等综合需求。'
+                    '我抢特斯拉活动，领取盈立豆并猜涨跌，进行模拟下注、平仓操作。提供登录注册、线上开户、兑换、股票池、猜涨跌、好友邀请等功能。'
                 ]
             },
             {
                 title: '技术栈',
                 children: [
-                    '框架： Vue2 + Vuex + Vue-router + ElementUI ；',
+                    '框架： React + React-router + redux ；',
+                    '构建、CI/CD ：webpack + babel + gitlab CI + SVN + jenkins + 腾讯云；',
+                    '统计和监控：GA 、 神策；'
+                ]
+            },
+            {
+                title: '工作和成就',
+                children: [
+                    '参与 react项目 的搭建，参与 redux 数据结构、项目结构、代码规范 等的设计；',
+                    '负责 我抢特斯拉活动页面的开发，一期、二期活动投放期间，吸引2000新用户注册，300人入金（金额>1亿港币）。'
+                ]
+            }
+        ]
+    },
+    {
+        title: {
+            name: '盈立智投pc',
+            date: '2020.11 - 至今'
+        },
+        content: [
+            {
+                title: '项目介绍',
+                children: [
+                    '本项目主要有注册及登录、股票列表、交易、市场、个股、资讯、个人中心，折线图等几大功能模块，公司已有此项目的手机app，需要做出对应的 pc客 户端，后端接口和一些原型是参考手机端 app，接口需要自己抓包进行完成。'
+                ]
+            },
+            {
+                title: '技术栈',
+                children: [
+                    '框架： Eelectron + Vue2 + Vuex + Vue-router + ElementUI ；',
                     '构建、CI/CD ：webpack + babel + gitlab CI + jenkins + IT私有云；'
                 ]
             },

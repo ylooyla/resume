@@ -8,14 +8,14 @@
             <headers />
             <!-- 教育经历 -->
             <education />
+            <!-- 工作经历 -->
+            <experience />
             <!-- 专业技能 -->
             <skills />
             <!-- 项目经历 -->
             <project />
             <!-- 个人作品 -->
-            <personal />
-            <!-- 工作经历 -->
-            <experience />
+            <!-- <personal /> -->
         </div>
     </div>
 </template>
